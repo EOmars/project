@@ -57,7 +57,7 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-
+	<!-- fin carousel -->
 
 	<div class="container text-center">
 		<h3>Titulo de la página</h3>
@@ -104,5 +104,164 @@
 
 		</div>
 	</div>
-</body>
+	<!-- fin container img-circle -->
+
+	<div class="bg-1">
+		<div class="container">
+			<h3 class="text-center">Presentaciones</h3>
+			<p class="text-center">Donec tincidunt lacus quam, non malesuada augue luctus vel</p>
+
+			<ul class="list-group">
+				<li class="list-group-item">Enero <span class="label label-danger">Concluido</span></li>	
+				<li class="list-group-item">Febero <span class="label label-success">Proximamente</span></li>	
+				<li class="list-group-item">Marzo <span class="label label-success">Próximamente</span></li>	
+			</ul>	
+
+			<!-- thumbnail -->
+			<div class="row text-center">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="assets/img/thumbnail/t01.jpg" alt="presentacion01">
+						<p><strong>Quetzal</strong></p>
+						<p>Julio 2008</p>
+						<button class="btn" data-toggle="modal" data-target="#modal-thumbnail">Ver</button>
+					</div>					
+				</div>
+
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="assets/img/thumbnail/t02.jpg" alt="presentacion01">
+						<p><strong>Quetzal</strong></p>
+						<p>Julio 2008</p>
+						<button class="btn" data-toggle="modal" data-target="#modal-thumbnail">Ver</button>
+					</div>					
+				</div>
+
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="assets/img/thumbnail/t03.jpg" alt="presentacion01">
+						<p><strong>Quetzal</strong></p>
+						<p>Julio 2008</p>
+						<button class="btn" data-toggle="modal" data-target="#modal-thumbnail">Ver</button>
+					</div>					
+				</div>
+			</div>
+			<!-- fin thumbnail -->
+		</div>	
+
+		<!-- modal -->
+		<div class="modal fade" id="modal-thumbnail" role="dialog">
+			<div class="modal-dialog">
+				<!-- contenido modal -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4><span class="glyphicon glyphicon-lock">Informacion</span></h4>						
+					</div>	
+					<div class="modal-body">
+						<form role="form">
+							<div class="form-group">		<label for="psw">Alguna informacion a ingresar</label>
+								<input type="number" name="form-control" id="psw" placeholder="Cuantos?">
+							</div>						
+							<div class="form-group">
+								<label for="usrname"><span class="glyphicon glyphicon-user">Enviar a</span></label>	
+								<input type="text" id="usrname" class="form-control" placeholder="Tu correo aqui">		
+							</div>
+							<button type="submit" class="btn btn-block">Enviar <span class="glyphicon glyphicon-ok"></span></button>
+						</form>						
+					</div>				
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"> <span class="glyphicon glyphicon-remove">Cancelar</span></button>
+
+						<p>Necesitas <a href="#">ayuda?</a></p>
+					</div>
+				</div>
+			</div>			
+		</div>	
+	</div>
+	<!-- fin bg-1 -->
+
+	<!-- contenedor de datos de contacto -->
+	<div class="container">
+		<h3 class="text-center">Contactar</h3>		
+		<p class="text-center"><em>Escríbenos algo</em></p>
+		<div class="row test">
+			<div class="col-md-4">
+				<p>Hola, echa un fonazo!</p>			
+				<p><span class="glyphicon glyphicon-phone"></span> 283 873 4457</p>
+				<p><span class="glyphicon glyphicon-envelope">Correo: correo@mail.com</span></p>
+			</div>			
+
+			<div class="col-md-8">				
+				<div class="row">
+					<div class="col-sm-6 form-group">	
+						<input type="text" class="form-control" id="nombre" placeholder="nombre" required>
+					</div>
+					<div class="col-sm-6 form-group">
+						<input type="email" name="email" class="form-control" placeholder="email">
+					</div>
+				</div>
+				<textarea class="form-control" id="comments" name="comments" placeholder="Deja un mensaje" rows="5"></textarea>
+				<br>
+				<div class="row">
+					<div class="col-md-12 form-group">
+						<button class="btn pull-right" type="submit">Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<h3 class="text-center"> Acerca del blog</h3>
+		<ul class="nav nav-tabs">
+			<li class="active"> <a data-toggle="tab" href="#home">pajaro balazo</a></li>
+			<li><a data-toggle="tab" href="#menu1">el aguila de la sierra</a></li>			
+			<li><a data-toggle="tab" href="#menu2">kikiriqueso</a></li>
+		</ul>
+
+		<div class="tab-content">			
+			<div id="home" class="tab-pane fade in active">
+				<h2>El pajaro balazo</h2>
+				<p>Acróbata espectacular, sorpendiendo siempre con técnicas impresionanes</p>
+			</div>
+
+			<div id="menu1" class="tab-pane fade">
+				<h2>El aguila de la sierra</h2>			
+				<p>Con visió de águila de la sierra, jamás conquistados.</p>	
+			</div>
+
+			<div id="menu2" class="tab-pane fade">
+				<h2>El kikirikeso</h2>
+				<p>El jefe de jefes</p>
+			</div>
+		</div>
+
+	</div>
+	<!-- fin contenedor datos de contacto -->
+
+	<!-- mapa  -->
+	<div id="googleMap"></div></body>
+	<!-- fin mapa -->
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+										
+				</ul>
+			</div>
+
+		</div>		
+	</nav>
+
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </html>
