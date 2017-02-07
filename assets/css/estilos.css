@@ -169,3 +169,12 @@ footer a:hover {
     color: #777;
     text-decoration: none;
 }
+
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+}
