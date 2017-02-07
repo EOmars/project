@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="assets/js/jquery.js" ></script>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
@@ -59,7 +59,8 @@
 	</div>
 	<!-- fin carousel -->
 
-	<div class="container text-center">
+	<!-- contenedor id=band -->
+	<div id="band" class="container text-center">
 		<h3>Titulo de la página</h3>
 
 		<p><em>Un texto para mostrar</em></p>
@@ -106,7 +107,8 @@
 	</div>
 	<!-- fin container img-circle -->
 
-	<div class="bg-1">
+	<!-- tour section  -->
+	<div id="tour" class="bg-1">
 		<div class="container">
 			<h3 class="text-center">Presentaciones</h3>
 			<p class="text-center">Donec tincidunt lacus quam, non malesuada augue luctus vel</p>
@@ -182,7 +184,7 @@
 	<!-- fin bg-1 -->
 
 	<!-- contenedor de datos de contacto -->
-	<div class="container">
+	<div id="contact" class="container">
 		<h3 class="text-center">Contactar</h3>		
 		<p class="text-center"><em>Escríbenos algo</em></p>
 		<div class="row test">
@@ -239,9 +241,10 @@
 	<!-- fin contenedor datos de contacto -->
 
 	<!-- mapa  -->
-	<div id="googleMap"></div></body>
+	<div id="googleMap"></div>
 	<!-- fin mapa -->
 
+	<!-- navbar -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -254,14 +257,32 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-										
+					<li><a href="#myPage">HOME</a></li>					
+					<li><a href="#band">COMVI</a></li>
+					<li><a href="#tour">TOUR</a></li>					
+					<li><a href="#contact">CONTACTO</a></li>
+					<li class="dropdown"> 
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Quiero saber más <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sobre el proyecto</a></li>	
+							<li><a href="#">Extras</a></li>				
+							<li><a href="#">Multimedia</a></li>	
+						</ul>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
 				</ul>
 			</div>
-
 		</div>		
 	</nav>
 
-
+	<footer class="text-center">
+		<a class="up-arroy" href="#myPage" data-toggle="tooltip" title="ir arriba">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a><br><br>
+		<p>Testing Bootstrap theme by <a href="w3schools.com" data-toggle="tooltip" title="visita w3schools">www.w3schools.com</a></p>
+	</footer>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
 </html>
